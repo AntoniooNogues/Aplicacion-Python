@@ -25,6 +25,12 @@ def insertar_datos():
     for botas in lista_botas:
         cursor.execute(script,(botas['nombre'], botas['marca'], botas['precio'], botas['imagen'], botas['url'], botas['descripcion'],botas['tipo_suela']))
     cerrar_conexion(conexion)
+def insertar_dato(bota):
+    conexion = conectar_bdd()
+    cursor = conexion.cursor()
+    script = "insert into botas (nombre,marca,precio,imagen,url,descripcion,tipo_suela) values (%s,%s,%s,%s,%s,%s,%s)"
+    cursor.execute(script,(bota['nombre'], bota['marca'], bota['precio'], bota['imagen'], bota['url'], bota['descripcion'],bota['tipo_suela']))
+    cerrar_conexion(conexion)
 def extraer_datos():
      lista_botas = []
      conexion = conectar_bdd()

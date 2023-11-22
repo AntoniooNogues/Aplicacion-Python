@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="Background">
+    <file>fondo.webp</file>
+  </qresource>
+</RCC>

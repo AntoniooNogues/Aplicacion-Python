@@ -11,7 +11,7 @@ class VentanaPrincipal (QMainWindow):
         self.Buscar.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.sql))
         self.Editar.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.editar))
         self.Eliminar.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.eliminar))
-        self.guardar.clicked.connect(self.crear_nuevo())
+        self.save_button.clicked.connect(self.crear_nuevo)
 
     def cargar_datos_sql(self):
         self.stacked.Widget.setCurrentWidget(self.tabla)
@@ -31,7 +31,7 @@ class VentanaPrincipal (QMainWindow):
         bota_nueva['precio'] = self.input_precio.text()
         bota_nueva['descripcion'] = self.input_descripcion.text()
         bota_nueva['tipo_suela'] = self.input_tipo_suela.text()
-        insertar_registro_diccionario(bota_nueva)
+        insertar_dato(bota_nueva)
 
 if __name__ == "__main__":
     import sys
@@ -39,5 +39,4 @@ if __name__ == "__main__":
     ventana_principal = VentanaPrincipal()
     ventana_principal.show()
     sys.exit(app.exec_())
-
 
