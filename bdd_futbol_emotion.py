@@ -21,10 +21,9 @@ def insertar_datos():
     conexion = conectar_bdd()
     #Crear cursor
     cursor=conexion.cursor()
-    script = 'insert into botas (nombre,marca,imagen,url,descripcion,tipo_suela) values (%s,%s,%s,%s,%s,%s,%s)'
+    script = 'insert into botas (nombre,marca,precio,imagen,url,descripcion,tipo_suela) values (%s,%s,%s,%s,%s,%s,%s)'
     for botas in lista_botas:
-        cursor.execute(script,(botas['nombre'], botas['marca'], botas['imagen'], botas['url'], botas['descripcion'],botas['tipo_suela']))
-
+        cursor.execute(script,(botas['nombre'], botas['marca'], botas['precio'], botas['imagen'], botas['url'], botas['descripcion'],botas['tipo_suela']))
     cerrar_conexion(conexion)
 def extraer_datos():
      lista_botas = []
@@ -63,11 +62,9 @@ def eliminacion_registro_id(id):
 def insertar_registro_diccionario(diccionario):
     conexion = conectar_bdd()
     cursor = conexion.cursor()
-    script = 'insert into botas (nombre,marca,imagen,url,descripcion,tipo_suela) values (%s,%s,%s,%s,%s,%s,%s)'
-    cursor.execute(script,(diccionario['nombre'], diccionario['marca'], diccionario['imagen'], diccionario['url'],diccionario['descripcion'],diccionario['tipo_suela']))
+    script = 'insert into botas (nombre,marca,precio,imagen,url,descripcion,tipo_suela) values (%s,%s,%s,%s,%s,%s,%s,%s)'
+    cursor.execute(script,(diccionario['nombre'], diccionario['marca'],diccionario['precio'], diccionario['imagen'], diccionario['url'],diccionario['descripcion'],diccionario['tipo_suela']))
     cerrar_conexion(conexion)
-
-
 
 """insertar_registro_diccionario({"nombre": "ULTRA PLAY IT NIÑO ", "marca": "PUMA ", "precio": "40.99 ", "imagen": "https://www.futbolemotion.com/imagesarticulos/199997/750/zapatilla-puma-ultra-play-it-nino-amarillo-fluor-0.webp", "url": "https://www.futbolemotion.com/es/comprar/zapatilla/puma/ultra-play-it-nino-yellow-blaze-white-black", "descripcion": "Hora de abrirse paso, hora de dejar todas las preocupaciones y mirar hacia el futuro, un nuevo año se acerca. Ha llegado el nuevo pack de botas de fútbol de Puma, con alegría y color. Con él, nuevos objetivos y tramos de las competiciones, los cuales llegan a su punto álgido. Puma envuelve las Future y Ultra en nuevas fuerzas que cuentan con explosiones de colores para el Voltage Pack. ", "tipo_suela": "Bota de nivel iniciación desarrollada para usarlos en campos de cemento y parquet. Orientada a jugadores que busquen una bota ligera y con un ajuste personalizado."})"""
 

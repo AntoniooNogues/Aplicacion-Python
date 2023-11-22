@@ -102,7 +102,7 @@ QPushButton {
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>buscar.png</normaloff>buscar.png</iconset>
+        <normaloff>../../../Downloads/Aplicacion/buscar.png</normaloff>../../../Downloads/Aplicacion/buscar.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -125,7 +125,7 @@ QPushButton {
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>icons8-añadir-50.png</normaloff>icons8-añadir-50.png</iconset>
+        <normaloff>../../../Downloads/Aplicacion/icons8-añadir-50.png</normaloff>../../../Downloads/Aplicacion/icons8-añadir-50.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -148,7 +148,7 @@ QPushButton {
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>icons8-basura-50.png</normaloff>icons8-basura-50.png</iconset>
+        <normaloff>../../../Downloads/Aplicacion/icons8-basura-50.png</normaloff>../../../Downloads/Aplicacion/icons8-basura-50.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -171,7 +171,7 @@ QPushButton {
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>icons8-lápiz-50.png</normaloff>icons8-lápiz-50.png</iconset>
+        <normaloff>../../../Downloads/Aplicacion/icons8-lápiz-50.png</normaloff>../../../Downloads/Aplicacion/icons8-lápiz-50.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -206,7 +206,7 @@ background-color: rgb(255, 255, 255);</string>
         <x>0</x>
         <y>0</y>
         <width>551</width>
-        <height>501</height>
+        <height>581</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -233,144 +233,444 @@ border-radius:14px;
 </string>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="add">
-       <widget class="QPushButton" name="enviar">
-        <property name="geometry">
-         <rect>
-          <x>30</x>
-          <y>440</y>
-          <width>491</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>ENVIAR</string>
-        </property>
-       </widget>
-       <widget class="QSplitter" name="todo_add">
-        <property name="geometry">
-         <rect>
-          <x>30</x>
-          <y>80</y>
-          <width>481</width>
-          <height>321</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QLineEdit{
-	font: 12pt &quot;Myanmar Text&quot;;
-}</string>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <widget class="QSplitter" name="menu_nombre">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <widget class="QLabel" name="nombre">
-          <property name="text">
-           <string>Nombre</string>
-          </property>
-         </widget>
-         <widget class="QLabel" name="marca">
-          <property name="text">
-           <string>Marca</string>
-          </property>
-         </widget>
-         <widget class="QLabel" name="imagen">
-          <property name="text">
-           <string>Imagen</string>
-          </property>
-         </widget>
-         <widget class="QLabel" name="url">
-          <property name="text">
-           <string>URL</string>
-          </property>
-         </widget>
-         <widget class="QLabel" name="precio">
-          <property name="text">
-           <string>Precio</string>
-          </property>
-         </widget>
-         <widget class="QLabel" name="descripcion">
-          <property name="text">
-           <string>Descripcion</string>
-          </property>
-         </widget>
-         <widget class="QLabel" name="tipo_suela">
-          <property name="text">
-           <string>Tipo Suela</string>
-          </property>
-         </widget>
-        </widget>
-        <widget class="QSplitter" name="inputs">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <widget class="QLineEdit" name="input_nombre">
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-         <widget class="QLineEdit" name="input_marca">
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-         <widget class="QLineEdit" name="input_imagen">
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-         <widget class="QLineEdit" name="input_url">
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-         <widget class="QLineEdit" name="input_precio">
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-         <widget class="QLineEdit" name="input_descripcion">
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-         <widget class="QLineEdit" name="input_tipo_suela">
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-        </widget>
-       </widget>
        <widget class="QLabel" name="label">
         <property name="geometry">
          <rect>
-          <x>110</x>
-          <y>20</y>
+          <x>100</x>
+          <y>10</y>
           <width>331</width>
           <height>41</height>
          </rect>
         </property>
+        <property name="styleSheet">
+         <string notr="true">color:#614CFF;</string>
+        </property>
         <property name="text">
-         <string>  Añadir nueva Zapatilla de Fubol Sala</string>
+         <string>Añadir nueva Zapatilla de Fubol Sala</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="guardar">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>440</y>
+          <width>441</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color: #cbccf7;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../Downloads/Aplicacion/icons8-guardar-50.png</normaloff>../../../Downloads/Aplicacion/icons8-guardar-50.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="input_id_2">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>64</y>
+          <width>291</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="input_imagen_3">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>207</y>
+          <width>291</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="imagen_3">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>207</y>
+          <width>121</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>14</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Imagen</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="input_tipo_suela_3">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>393</y>
+          <width>291</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="input_nombre_3">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>114</y>
+          <width>291</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="nombre_5">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>114</y>
+          <width>121</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>14</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Nombre</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="nombre_4">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>64</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>14</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>ID</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="input_precio_3">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>300</y>
+          <width>291</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="marca_3">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>161</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>14</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Marca</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="descripcion_3">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>347</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>14</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Descripcion</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="input_marca_3">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>161</y>
+          <width>291</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="input_url_3">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>254</y>
+          <width>291</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="precio_3">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>300</y>
+          <width>121</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>14</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Precio</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="url_3">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>254</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>14</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>URL</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="tipo_suela_3">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>393</y>
+          <width>121</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>14</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Tipo Suela</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="input_descripcion_3">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>347</y>
+          <width>291</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
         </property>
        </widget>
       </widget>
       <widget class="QWidget" name="sql">
        <property name="styleSheet">
-        <string notr="true"/>
+        <string notr="true">QPushWidget{
+backgorund-color:#cbccf7;
+}</string>
        </property>
-       <widget class="QLabel" name="label_2">
+       <widget class="QLabel" name="texto_tabla">
         <property name="geometry">
          <rect>
-          <x>160</x>
-          <y>20</y>
-          <width>211</width>
+          <x>170</x>
+          <y>10</y>
+          <width>191</width>
           <height>41</height>
          </rect>
         </property>
@@ -380,22 +680,28 @@ color:#614CFF;
 font: 75 16pt &quot;Myanmar Text&quot;;</string>
         </property>
         <property name="text">
-         <string>    Botas Futbol Sala</string>
+         <string>Botas Futbol Sala</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
         </property>
        </widget>
-       <widget class="QTableWidget" name="tableWidget">
+       <widget class="QTableWidget" name="tabla">
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>70</y>
+          <y>60</y>
           <width>551</width>
-          <height>431</height>
+          <height>371</height>
          </rect>
         </property>
         <property name="font">
          <font>
           <pointsize>10</pointsize>
          </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(208, 221, 255);</string>
         </property>
         <column>
          <property name="text">
@@ -490,9 +796,466 @@ font: 75 16pt &quot;Myanmar Text&quot;;</string>
          </property>
         </column>
        </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>440</y>
+          <width>91</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #cbccf7;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../Downloads/Aplicacion/icons8-actualizar-50.png</normaloff>../../../Downloads/Aplicacion/icons8-actualizar-50.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="eliminar"/>
-      <widget class="QWidget" name="editar"/>
+      <widget class="QWidget" name="editar">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+color:#614CFF;
+font-wight:bold;
+}</string>
+       </property>
+       <widget class="QLabel" name="texto_tabla_2">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>10</y>
+          <width>191</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">padding-bottom: 0;
+color:#614CFF;
+font: 75 16pt &quot;Myanmar Text&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Edicion de registro</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="input_id">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>63</y>
+          <width>291</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="nombre_2">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>63</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>14</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>ID</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="input_url_2">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>253</y>
+          <width>291</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="input_descripcion_2">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>346</y>
+          <width>291</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="input_nombre_2">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>113</y>
+          <width>291</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="input_tipo_suela_2">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>392</y>
+          <width>291</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="input_imagen_2">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>206</y>
+          <width>291</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="input_marca_2">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>160</y>
+          <width>291</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="input_precio_2">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>299</y>
+          <width>291</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="imagen_2">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>206</y>
+          <width>121</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>14</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Imagen</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="nombre_3">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>113</y>
+          <width>121</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>14</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Nombre</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="tipo_suela_2">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>392</y>
+          <width>121</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>14</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Tipo Suela</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="precio_2">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>299</y>
+          <width>121</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>14</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Precio</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="descripcion_2">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>346</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>14</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Descripcion</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="url_2">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>253</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>14</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>URL</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="marca_2">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>160</y>
+          <width>121</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Myanmar Text</family>
+          <pointsize>14</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Marca</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>440</y>
+          <width>441</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #cbccf7;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../../Downloads/Aplicacion/icons8-guardar-50.png</normaloff>../../../Downloads/Aplicacion/icons8-guardar-50.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+       </widget>
+      </widget>
      </widget>
     </widget>
    </widget>

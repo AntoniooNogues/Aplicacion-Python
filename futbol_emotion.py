@@ -24,10 +24,7 @@ def extraer_informacion():
         imagen = elemento.find("img")["src"]
         marca = elemento.find("div", {"class": "producto-listado-marca position-absolute blend-multiply"}).find("img")["alt"]
         url = elemento.find("a", {"class": "text-secondary d-block"})["href"]
-        """if nombre == "Zapatilla Mundial" or nombre == "Zapatilla React Gato" or nombre =="Zapatilla Street Gato" or nombre =="Zapatilla Lunar Gato II" or nombre == "Zapatilla Street Gato Niño" or nombre=="Zapatilla Zoom Mercurial Vapor 15 Academy IC Niño" or nombre=="Zapatilla Legend 10 Academy IC" or nombre=="Zapatilla Copa Gloro IN" or imagen=="https://www.futbolemotion.com/imagesarticulos/216366/medianas/zapatilla-kelme-precision-rojo-azul-1.jpg" or nombre=="Zapatilla FS Reactive":
-            precio = float(elemento.find("div", {"class": "precio fw-bolder fs-5 font-style-currency"}).text.replace("€", "").replace(",", ".").strip())
-        else:
-            precio = float(elemento.find("div", {"class": "precio-rebajado fw-bolder fs-5 text-danger font-style-currency"}).text.replace("€", "").replace(",", ".").strip())"""
+        precio = (elemento.find("div", {"class": "d-inline-flex flex-wrap py-2 align-items-end"}).text).split()[0]
 
         #Sacar informacion detallada de cada producto
         pagina_detalles = requests.get(url).content
@@ -43,6 +40,7 @@ def extraer_informacion():
         productos = productos_plantilla.copy()
         productos["nombre"] = nombre
         productos["marca"] = marca
+        productos["precio"] = precio
         productos["imagen"] = imagen
         productos["url"] = url
         productos["descripcion"] = descripcion
