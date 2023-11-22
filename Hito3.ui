@@ -102,7 +102,7 @@ QPushButton {
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>../../../Downloads/Aplicacion/buscar.png</normaloff>../../../Downloads/Aplicacion/buscar.png</iconset>
+        <normaloff>buscar.png</normaloff>buscar.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -125,7 +125,7 @@ QPushButton {
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>../../../Downloads/Aplicacion/icons8-añadir-50.png</normaloff>../../../Downloads/Aplicacion/icons8-añadir-50.png</iconset>
+        <normaloff>icons8-añadir-50.png</normaloff>icons8-añadir-50.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -148,7 +148,7 @@ QPushButton {
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>../../../Downloads/Aplicacion/icons8-basura-50.png</normaloff>../../../Downloads/Aplicacion/icons8-basura-50.png</iconset>
+        <normaloff>icons8-basura-50.png</normaloff>icons8-basura-50.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -171,7 +171,7 @@ QPushButton {
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>../../../Downloads/Aplicacion/icons8-lápiz-50.png</normaloff>../../../Downloads/Aplicacion/icons8-lápiz-50.png</iconset>
+        <normaloff>icons8-lápiz-50.png</normaloff>icons8-lápiz-50.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -233,7 +233,7 @@ border-radius:14px;
 </string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="add">
        <widget class="QPushButton" name="enviar">
@@ -253,10 +253,15 @@ border-radius:14px;
         <property name="geometry">
          <rect>
           <x>30</x>
-          <y>70</y>
-          <width>491</width>
-          <height>351</height>
+          <y>80</y>
+          <width>481</width>
+          <height>321</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	font: 12pt &quot;Myanmar Text&quot;;
+}</string>
         </property>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -357,6 +362,9 @@ border-radius:14px;
        </widget>
       </widget>
       <widget class="QWidget" name="sql">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
        <widget class="QLabel" name="label_2">
         <property name="geometry">
          <rect>
@@ -378,50 +386,107 @@ font: 75 16pt &quot;Myanmar Text&quot;;</string>
        <widget class="QTableWidget" name="tableWidget">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>80</y>
-          <width>531</width>
-          <height>411</height>
+          <x>0</x>
+          <y>70</y>
+          <width>551</width>
+          <height>431</height>
          </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
         </property>
         <column>
          <property name="text">
-          <string>Nueva columna</string>
+          <string>ID</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
         </column>
         <column>
          <property name="text">
-          <string>Nueva columna</string>
+          <string>Nombre</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
         </column>
         <column>
          <property name="text">
-          <string>Nueva columna</string>
+          <string>Marca</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
         </column>
         <column>
          <property name="text">
-          <string>Nueva columna</string>
+          <string>Imagen</string>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
         </column>
         <column>
          <property name="text">
-          <string>Nueva columna</string>
+          <string>Url</string>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
         </column>
         <column>
          <property name="text">
-          <string>Nueva columna</string>
+          <string>Precio</string>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
         </column>
         <column>
          <property name="text">
-          <string>Nueva columna</string>
+          <string>Descripcion</string>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
         </column>
         <column>
          <property name="text">
-          <string>Nueva columna</string>
+          <string>Tipo Suela</string>
+         </property>
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
         </column>
        </widget>

@@ -68,7 +68,7 @@ def insertar_registro_diccionario(diccionario):
     cerrar_conexion(conexion)
 
 
-insertar_datos()
+
 """insertar_registro_diccionario({"nombre": "ULTRA PLAY IT NIÑO ", "marca": "PUMA ", "precio": "40.99 ", "imagen": "https://www.futbolemotion.com/imagesarticulos/199997/750/zapatilla-puma-ultra-play-it-nino-amarillo-fluor-0.webp", "url": "https://www.futbolemotion.com/es/comprar/zapatilla/puma/ultra-play-it-nino-yellow-blaze-white-black", "descripcion": "Hora de abrirse paso, hora de dejar todas las preocupaciones y mirar hacia el futuro, un nuevo año se acerca. Ha llegado el nuevo pack de botas de fútbol de Puma, con alegría y color. Con él, nuevos objetivos y tramos de las competiciones, los cuales llegan a su punto álgido. Puma envuelve las Future y Ultra en nuevas fuerzas que cuentan con explosiones de colores para el Voltage Pack. ", "tipo_suela": "Bota de nivel iniciación desarrollada para usarlos en campos de cemento y parquet. Orientada a jugadores que busquen una bota ligera y con un ajuste personalizado."})"""
 
 
